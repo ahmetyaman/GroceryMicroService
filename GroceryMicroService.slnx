@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Apps/" />
+  <Folder Name="/src/Apps/Mobile/" />
+  <Folder Name="/src/Apps/Web/" />
+  <Folder Name="/src/Services/" />
+  <Folder Name="/src/Services/Core/">
+    <Project Path="Core/Core.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/Goods/">
+    <Project Path="Goods.Api/Goods.Api.csproj" Id="dd89b964-4224-4225-9a44-553f5c1aa571" />
+  </Folder>
+</Solution>
