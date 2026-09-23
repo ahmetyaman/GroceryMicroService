@@ -73,7 +73,7 @@ namespace Goods.Api
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Goods api V1"));
 
-            app.UseHttpsRedirection();
+         //   app.UseHttpsRedirection();
             app.UseStaticHttpContext();
             app.UseRouting();
             //app.UseAuthentication();
