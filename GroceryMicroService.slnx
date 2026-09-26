@@ -3,11 +3,21 @@
   <Folder Name="/src/Apps/" />
   <Folder Name="/src/Apps/Mobile/" />
   <Folder Name="/src/Apps/Web/" />
+  <Folder Name="/src/BuildingBlocks/" />
+  <Folder Name="/src/BuildingBlocks/EventBus/">
+    <Project Path="EventBus.Base/EventBus.Base.csproj" Id="b8644453-89c6-4fd8-b872-3368693807f7" />
+    <Project Path="EventBus.Factory/EventBus.Factory.csproj" Id="d2a97f1b-6550-4723-acaa-8c5ba0bdecdd" />
+    <Project Path="EventBus.RabbitMQ/EventBus.RabbitMQ.csproj" Id="001fd10e-db97-40f4-a005-d9a57d73f03f" />
+  </Folder>
   <Folder Name="/src/Services/" />
   <Folder Name="/src/Services/Core/">
     <Project Path="Core/Core.csproj" />
   </Folder>
   <Folder Name="/src/Services/Goods/">
     <Project Path="Goods.Api/Goods.Api.csproj" Id="dd89b964-4224-4225-9a44-553f5c1aa571" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/BuildingBlocks/">
+    <Project Path="ConsoleAppEventBusTest/ConsoleAppEventBusTest.csproj" Id="94a511ea-4f8e-4203-be52-58cc8ea73be1" />
   </Folder>
 </Solution>
