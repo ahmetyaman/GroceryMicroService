@@ -19,3 +19,5 @@
 /EventBus.Factory/obj
 /EventBus.RabbitMQ/bin/Debug/net10.0
 /EventBus.RabbitMQ/obj
+/Payment.Api/bin/Debug/net10.0
+/Payment.Api/obj

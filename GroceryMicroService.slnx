@@ -16,6 +16,9 @@
   <Folder Name="/src/Services/Goods/">
     <Project Path="Goods.Api/Goods.Api.csproj" Id="dd89b964-4224-4225-9a44-553f5c1aa571" />
   </Folder>
+  <Folder Name="/src/Services/Payment/">
+    <Project Path="Payment.Api/Payment.Api.csproj" Id="e6a6c38b-a836-4d8d-85ab-3d3c9054b1fb" />
+  </Folder>
   <Folder Name="/tests/" />
   <Folder Name="/tests/BuildingBlocks/">
     <Project Path="ConsoleAppEventBusTest/ConsoleAppEventBusTest.csproj" Id="94a511ea-4f8e-4203-be52-58cc8ea73be1" />

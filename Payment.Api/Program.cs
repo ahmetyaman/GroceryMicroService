@@ -1,0 +1,29 @@
+namespace Payment.Api
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateHostBuilder(args).Build()
+
+                .Run();
+        }
+
+        public static IHostBuilder CreateHostBuilder(string[] args)
+        {
+            return Host.CreateDefaultBuilder(args)
+
+                  .ConfigureWebHostDefaults(webBuilder =>
+                  {
+                      webBuilder.UseUrls("http://*:1001");
+                      webBuilder.UseStartup<Startup>();
+                  })
+
+               .ConfigureLogging(logging =>
+               {
+                   logging.ClearProviders();
+                   logging.SetMinimumLevel(LogLevel.Trace);
+               });
+        }
+    }
+}
