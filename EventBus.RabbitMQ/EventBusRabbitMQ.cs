@@ -57,11 +57,13 @@ namespace EventBus.RabbitMQ
 
             consumerChannel.ExchangeDeclare(exchange: EventBusConfig.DefaultTopicName, type: "direct");
 
-            consumerChannel.QueueDeclare(queue: GetSubName(eventName), durable: true,
-          exclusive: false, autoDelete: false, arguments: null);
+            /* Push message yapan taraf yanlızca excahi declare eder quee tanımı ve quee binding  olayını gerçekleştirmez.
+             Subscrip   yapan taraf ise  hangi kutuk hangi exchange rootinkeyi alıp onu dinliyor ve kuyruk ve exchange server bağlaması yapmak zorundadır. */
+          //  consumerChannel.QueueDeclare(queue: GetSubName(eventName), durable: true,
+          //exclusive: false, autoDelete: false, arguments: null);
 
-            consumerChannel.QueueBind(queue: GetSubName(eventName), exchange: EventBusConfig.DefaultTopicName,
-           routingKey: eventName);
+          //  consumerChannel.QueueBind(queue: GetSubName(eventName), exchange: EventBusConfig.DefaultTopicName,
+          // routingKey: eventName);
 
             var message = JsonConvert.SerializeObject(@event);
             var body = Encoding.UTF8.GetBytes(message);
