@@ -16,6 +16,9 @@
   <Folder Name="/src/Services/Goods/">
     <Project Path="Goods.Api/Goods.Api.csproj" Id="dd89b964-4224-4225-9a44-553f5c1aa571" />
   </Folder>
+  <Folder Name="/src/Services/Identity/">
+    <Project Path="Identity.Api/Identity.Api.csproj" Id="60e95793-b888-428d-ab49-188d16f5026c" />
+  </Folder>
   <Folder Name="/src/Services/Notification/">
     <Project Path="NotificationApp/NotificationApp.csproj" Id="fad5b5f9-a3a2-427f-b80e-ec5ed06fe15c" />
   </Folder>
