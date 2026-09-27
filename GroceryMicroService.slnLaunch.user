@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Payment.Api\\Payment.Api.csproj",
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "NotificationApp\\NotificationApp.csproj",
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": "NotificationApp"
+      }
+    ]
+  }
+]

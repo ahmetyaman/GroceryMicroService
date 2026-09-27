@@ -21,3 +21,5 @@
 /EventBus.RabbitMQ/obj
 /Payment.Api/bin/Debug/net10.0
 /Payment.Api/obj
+/NotificationApp/bin/Debug/net10.0
+/NotificationApp/obj
