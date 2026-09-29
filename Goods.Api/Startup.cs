@@ -1,5 +1,6 @@
 using AutoMapper;
 using Core.Extensions;
+using Goods.Api.Extensions;
 using Goods.Api.Goods.Api.DataAccess.Concrete.Context;
 using Goods.Api.Goods.Api.Entities.Mappings;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +27,8 @@ namespace Goods.Api
 
 
             services.AddConfiguratioInfra(Configuration);
+
+            services.ConfigureConsul(Configuration);
 
             #region AutoMapper
 
@@ -62,7 +65,7 @@ namespace Goods.Api
 
 
         }
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,IHostApplicationLifetime lifetime)
         {
             //if (env.IsDevelopment())
             //{
@@ -84,6 +87,8 @@ namespace Goods.Api
             {
                 endpoints.MapControllers();
             });
+
+            app.RegisterWithConsul(lifetime);
         }
     }
 }

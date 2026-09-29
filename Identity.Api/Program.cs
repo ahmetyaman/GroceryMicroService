@@ -15,7 +15,7 @@ namespace Identity.Api
 
                   .ConfigureWebHostDefaults(webBuilder =>
                   {
-                      webBuilder.UseUrls("http://*:1001");
+                      
                       webBuilder.UseStartup<Startup>();
                   })
 

@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  consul:
+    image: hashicorp/consul:1.19
+    container_name: consul_container
+    restart: always
+    ports:
+      # HTTP API ve Web Arayüzü (UI) portu
+      - "8500:8500"
+      # DNS Sunucusu arayüzü
+      - "8600:8600/tcp"
+      - "8600:8600/udp"

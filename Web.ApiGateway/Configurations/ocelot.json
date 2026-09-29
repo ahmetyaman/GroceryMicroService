@@ -1,0 +1,76 @@
+{
+
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/auth",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/auth",
+      "UpstreamScheme": "http",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/category/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/goods/category/{everything}",
+      "UpstreamScheme": "http",
+      "UpstreamHttpMethod": [ "Get", "Post", "Delete", "Put" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/product/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/goods/product/{everything}",
+      "UpstreamScheme": "http",
+      "UpstreamHttpMethod": [ "Get", "Post", "Delete", "Put" ]
+    }
+  ]
+
+  /*
+  "Routes": [
+    {
+      "UseServiceDiscovery": true,
+      "ServiceName": "Identity",
+      "DownstreamPathTemplate": "/api/auth",
+      "DownstreamScheme": "http",
+
+      "UpstreamPathTemplate": "/auth",
+      "UpstreamScheme": "http",
+      "UpstreamHttpMethod": [ "Post" ]
+    }
+  ],
+
+
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000",
+    "ServiceDiscoveryProvider": {
+      "Scheme": "http",
+      "Host": "localhost",
+      "Port": 8500,
+      "Type": "Consul",
+      "PollingInterval": 2000
+    }
+  }
+  */
+
+
+
+}

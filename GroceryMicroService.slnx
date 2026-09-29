@@ -1,5 +1,8 @@
 <Solution>
   <Folder Name="/src/" />
+  <Folder Name="/src/ApiGateways/">
+    <Project Path="Web.ApiGateway/Web.ApiGateway.csproj" Id="318398d8-ccbe-4a6d-8750-fee5d0b34955" />
+  </Folder>
   <Folder Name="/src/Apps/" />
   <Folder Name="/src/Apps/Mobile/" />
   <Folder Name="/src/Apps/Web/" />

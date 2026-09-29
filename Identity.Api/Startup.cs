@@ -1,4 +1,6 @@
+using Consul;
 using Identity.Api.Application.Services;
+using Identity.Api.Extensions;
 using Microsoft.OpenApi;
 
 namespace Identity.Api
@@ -19,6 +21,10 @@ namespace Identity.Api
             services.AddControllers();
             services.AddEndpointsApiExplorer();
 
+            services.ConfigureConsul(Configuration);
+
+
+          
 
             #region Swagger Dependencies
 
@@ -30,7 +36,7 @@ namespace Identity.Api
             #endregion
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,IHostApplicationLifetime lifetime)
         {
             //if (env.IsDevelopment())
             //{
@@ -45,14 +51,22 @@ namespace Identity.Api
 
 
             app.UseRouting();
-            app.UseAuthentication();
-            app.UseAuthorization();
+    
             app.UseStaticFiles();
+
+
+
+
+
+            
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+            
+            app.RegisterWithConsul(lifetime);
         }
     }
 }

@@ -3,14 +3,14 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "Payment.Api\\Payment.Api.csproj",
-        "Action": "StartWithoutDebugging",
-        "DebugTarget": "http"
+        "Path": "Identity.Api\\Identity.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "Identity.Api"
       },
       {
-        "Path": "NotificationApp\\NotificationApp.csproj",
-        "Action": "StartWithoutDebugging",
-        "DebugTarget": "NotificationApp"
+        "Path": "Web.ApiGateway\\Web.ApiGateway.csproj",
+        "Action": "Start",
+        "DebugTarget": "Web.ApiGateway"
       }
     ]
   }

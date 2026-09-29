@@ -1,0 +1,8 @@
+NotificationApp  ===>Console App   doesnt reached  Ocelot Gateway It reaches  EventBus
+
+Web.ApiGateWay  ===>http://localhost:5000
+ 
+Identity.Api    ===>http://localhost:5001
+Goods.Api       ===>http://localhost:5002
+
+Payment.Api     ===>Api App doesnt reached  Ocelot Gateway It reaches  EventBus

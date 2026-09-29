@@ -25,3 +25,5 @@
 /NotificationApp/obj
 /Identity.Api/bin/Debug/net10.0
 /Identity.Api/obj
+/Web.ApiGateway/bin/Debug/net10.0
+/Web.ApiGateway/obj
